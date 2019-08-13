@@ -1,0 +1,51 @@
+.ct-basic{
+	@include text-type($color-ct-basic,16px,1.6);
+}
+.ct-WCU1{
+    @include font-type('bold');
+	@include text-type($color-ct-basic,30px);
+    margin-bottom: 30px;
+}
+.ct-WCU2{
+	@include font-type('bold');
+	@include text-type($color-ct-basic,16px);
+	margin-bottom: 20px;
+}
+.ct-MWL1{
+	@include font-type('bold');
+	@include text-type($color-second,30px,initial,center);
+	margin: 20px auto;
+}
+.ct-MWL2{
+	color: $color-second;
+	@include text-type($color-second,16px,initial,center);
+	opacity: 0.8;
+}
+.ct-MWL3{
+	@extend .ct-MWL2;
+	font-size: 18px;
+}
+.ct-ft1{
+	@include text-type($color-second,25px);
+	margin: 40px auto;
+}
+.ct-ft2{
+	@include text-type($color-second,16px,1.9);
+	margin: 20px auto;
+}
+.ct-foot-CR1{
+	@include font-type('bold');
+	@include text-type($color-ct-foot-CR,30px);
+}
+.ct-foot-CR2{
+	color: $color-ct-foot-CR;
+	@include text-type($color-ct-foot-CR,40px);
+}
+.ct-latest-number{
+	@include size_ct(18px,1.4);
+	margin: 0px;
+}
+.ct-latest-word{
+	@include size_ct(12px,1);
+	margin: 0px;
+}

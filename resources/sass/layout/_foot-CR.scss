@@ -1,0 +1,28 @@
+.foot-CR{
+	width: 100%;
+	background: $color-main;
+    opacity: 0.9;
+    @include flex();
+    .container{
+        width: 100%;
+        .left-foot-CR{
+            float: left;
+            margin: 35px auto;
+            @include media1280{
+                float: none;
+                text-align: center;
+            }
+        }
+        .right-foot-CR{
+            margin: 35px auto;
+            float: right;
+            .bot-right-foot-CR{
+                margin-top: 10px;
+            }
+            @include media1280{
+                float: none;
+                text-align: center;
+            } 
+        }
+    }
+}

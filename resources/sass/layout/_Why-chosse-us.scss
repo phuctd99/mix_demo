@@ -1,0 +1,56 @@
+.Why-chosse-us{
+    background: $bg-wcu;
+    .top-WCU{
+        margin-top: 40px;
+        text-align: center;
+        display: inline-block;
+    }
+    .WCU{
+        @include flex();
+        .col-WCU{
+            margin-bottom: 60px;
+            max-width: 22%;
+            text-align: center;
+            .circle-1{
+                margin: 40px auto;
+                position: relative;
+                background: nth($circles-color, 1); 
+                width: nth($circles-size, 1) ;
+                height: nth($circles-size, 1);
+                border-radius: 80px;
+            }
+            @for $i from 2 through length($circles-color){
+                .circle-#{$i} {
+                    background: nth($circles-color, $i); 
+                    width: nth($circles-size, $i) ;
+                    height: nth($circles-size, $i);
+                    margin: 10px 10px;
+                    border-radius: 80px;
+                    position: absolute;
+                }
+            } 
+            .li-wcu{
+                p{
+                    &:hover{
+                        color: $color-main;
+                        transform: scale(1.3);
+                        transition: transform 1s ease;
+                    }
+                }
+            }
+                img{
+                    margin-top: 30px;
+                }
+                @include media992{
+                    max-width: 40%;
+                }
+                @include media630{
+                    max-width: none;
+		            margin: auto;
+                }
+            }
+    @include media630{
+        display: block;
+    }
+    }
+}

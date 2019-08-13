@@ -1,0 +1,23 @@
+@font-face{
+    font-family: "FuturaLT-Book";
+    src: url(../fonts/FuturaLT.ttf);
+}
+@font-face{
+    font-family: "FuturaLT-Bold";
+    src: url(../fonts/FuturaLT-Bold.ttf);
+}
+$font-nor: FuturaLT-Book;
+$font-bold: "FuturaLT-Bold";
+$color-main : #ffcb0f;
+$color-second : #ffffff;
+$color-ct-basic : rgb(72, 72, 72);
+$color-logo-p: rgb(183, 183, 183);
+$color-ct-foot-CR: #73757e;
+$bg-header: #222533;
+$bg-wcu: hsl(202, 44%, 96%);
+$bg-modal:rgba(0, 0, 0, 0.7);
+$bg-nav:#5d6066;
+$bg-nav-last:#1a1c27;
+
+$circles-color : #ffea9f,#fadb64,#ffcb0f,#ffffff;
+$circles-size : 170px,150px,130px,110px;

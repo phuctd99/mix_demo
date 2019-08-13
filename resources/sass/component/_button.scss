@@ -1,0 +1,21 @@
+.btn{
+	@include create_btn($color-main,$color-second);
+	margin: 70px 30px;
+	&:hover{
+		background:#4F4A4A;
+		color:#7DECE5;
+	}
+	@include media630{
+		margin: 30px 10px 30px 0px;
+	}
+}
+.btn-AC{
+	@extend .btn;
+	margin-left: 0px;
+}
+.btn-FT{
+	@include create_btn(#73757e,$color-second);
+	margin: 0px 0px;
+	width: 100px;
+	height: 35px;
+}

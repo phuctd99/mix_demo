@@ -1,3 +1,19 @@
-boby{
-    font-family: Arial, Tahoma, san-serif;
-}
+@import "utils/variables";
+@import "utils/mixins";
+@import "base/base";
+@import "component/button";
+@import "component/input";
+@import "component/logo";
+@import "component/content";
+@import "component/modal";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/Main_Banner";
+@import "layout/About-Company";
+@import "layout/_Why-chosse-us";
+@import "layout/Our-services";
+@import "layout/Made-with-love";
+@import "layout/Customer-reviews";
+@import "layout/foot-CR";
+@import "layout/footer";
+

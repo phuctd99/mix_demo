@@ -1,0 +1,35 @@
+.About-Company{
+    .container{
+        @include flex();
+        
+        .About-left{
+            margin-top: 80px;
+            max-width: 50%;
+            .ct-AC1{
+                @include font-type('bold');
+                color: $color-main;
+                font-size: 38px;
+            }
+            .ct-AC2{
+                @include font-type('bold');
+                color: $color-ct-basic;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            @include media768{
+                max-width: none;
+            }
+        }
+        .About-right{
+            text-align: center;
+            min-width: 40%;
+            background: url('../../images/Layer\ 2.png');
+            img{
+                height: 100%;
+            }
+            @include media768{
+                display: none;
+            }
+        }
+    }
+}

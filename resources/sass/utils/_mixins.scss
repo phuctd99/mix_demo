@@ -1,0 +1,61 @@
+@mixin font-type($font:'nor') {
+    @if($font == 'bold'){
+        font-family: $font-bold;
+    }@else{
+        font-family: $font-nor;
+    }
+}
+@mixin text-type($color,$fontsize,$lineheight:'initial',$align:'left'){
+    @include size_ct($fontsize, $lineheight);
+    color: $color;
+    text-align: $align;
+}
+@mixin list-item($top,$bot,$left,$right) {
+    float: left;
+    margin-top: $top;
+    margin-bottom: $bot;
+    margin-left: $left;
+    margin-right: $right;
+}
+@mixin  size_ct($font-size,$line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+@mixin create_btn($color, $text-color) {
+    background: $color;
+    width: 157px;
+	height: 45px;
+	border: none;
+    border-radius: 15px;
+    font-family: $font_bold;
+    color: $text-color;
+}
+@mixin flex(){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin media1280 {
+    @media (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin media992 {
+    @media(max-width: 991.98px){
+        @content;
+    }
+}
+
+@mixin media768 {
+    @media (max-width:767.98px){
+        @content;
+    }
+}
+
+@mixin media630 {
+    @media (max-width:630px) {
+        @content;
+    }
+}

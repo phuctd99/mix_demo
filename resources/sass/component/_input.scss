@@ -1,0 +1,22 @@
+.form-control1{
+	width: 270px;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin: 0px 10px;
+	padding-left: 9px;
+	outline: none;
+	@include media768{
+		margin: 10px 0px;
+		width: 100%;
+	}
+}
+.form-control{
+	width: 450px;
+	height: 35px;
+	@extend .form-control1;
+	@include media768{
+		width: 100%;
+		margin:0px 0px 20px 0px;
+	}
+}

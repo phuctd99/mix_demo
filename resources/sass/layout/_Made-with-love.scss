@@ -1,0 +1,23 @@
+.Made-with-love{
+	width: 100%;
+	background: url('../../images/Layer\ 3.jpg');
+	margin: 20px auto;
+    height: 120%;
+    .top-MWL{
+        padding:40px;
+        .scrollmenu{
+            text-align: center;
+            margin: 40px auto;
+            a{
+                display: inline-block;
+                color:$color-second ;
+                text-align: center;
+                padding: 14px;
+                &:hover{
+                    background-color: #282828;
+	                border-radius: 30px;
+                }
+            }
+        }
+    }
+}

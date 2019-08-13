@@ -1,0 +1,46 @@
+.Our-services{
+    .top-OS{
+        @extend .ct-WCU1;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .OS{
+        @include flex();
+        .col-OS{
+            max-width: 30%;
+            margin: 20px;
+            padding-right: 20px;
+            img:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: transform .5s ease;
+            }
+            .ct-OS{
+                @include font-type('bold');
+                font-size: 18px;
+                color: $color-ct-basic;
+                margin: 20px auto;
+            }
+            .img-OS{
+                @include media1280{
+                    margin-right: 30px;
+		            width: 90%;
+                }
+                
+            }
+            @include media1280{
+                display: flex; 
+                max-width: 100%;
+                margin: 20px;
+            }
+            @include media768{
+                max-width: none;
+		        display: block;
+            }
+        }
+        @include media1280{
+            display: block;
+        }
+        
+    }
+}

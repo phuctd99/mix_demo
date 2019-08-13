@@ -1,0 +1,75 @@
+.Customer-reviews{
+	width: 100%;
+    background: url('../../images/Layer\ 17.jpg');
+    .top-WCU{
+        text-align: center;
+        margin-top: 40px;
+        .ct-cr{
+            padding: 0px 0px 40px 40px;
+            @extend .ct-basic;
+        }
+    }
+    .CR{
+        margin: 50px 0px;
+        @include flex();
+        .col-CR{
+            max-width: 30%;
+            margin: 20px 0px;
+            overflow: hidden;
+            .cr1,
+            .cr3{
+                z-index: 0;
+                display:flex;
+                width: 100%;
+                height: 320px;
+                background: url('../../images/talk1.png');
+                background-size: 100% 100%;
+                padding: 30px 20px;
+                bottom: 0px;
+            }
+            @include media630{
+                max-width: none;
+            }
+        }
+        .col-CR-mid{
+            max-width: 30%;
+            .ct-col-CR {
+                z-index: 1;
+                display:flex;
+                width: 100%;
+                height: 360px;
+                background: url('../../images/talk2.png');
+                background-size: 100% 100%;
+                padding: 30px 20px;
+            }
+            @include media630{
+                max-width: none;
+            }
+        }
+        @include media630{
+            display: block;
+        }
+    }
+    #image{
+        height: 30px;
+        margin-right: 5px;
+    }
+    .image-CR{
+        width: 40%;
+        text-align:center;
+        margin: 15px auto;
+        cursor: pointer;
+        .img-CR:hover{
+            transform: rotate(360deg);
+            transition: transform 2s ease;
+        }
+    }
+}
+#talk1{
+    overflow: hidden;
+    margin: 20px auto;
+    line-height: 1.9;
+}
+#talk2{
+	overflow: hidden;
+}

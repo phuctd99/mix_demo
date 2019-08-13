@@ -1,0 +1,15 @@
+.logo{
+    margin: 22px 0px;
+    min-width: 190px;
+    .construction{
+        color: $color-main;
+        @include font-type('bold');
+        @include size-ct(22px,1);
+        font-style: oblique;
+    }
+    p{
+        color:$color-logo-p;
+        font-size: 16px;
+        
+    }
+}
