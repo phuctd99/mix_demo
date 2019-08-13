@@ -11,6 +11,7 @@ Thực hiện bởi: [Trần Duy Phúc](https://github.com/phuctd99)
 ## Liên kết
 
 - Liên kết học liệu: https://sass-lang.com/documentation
+- Folder scss : https://github.com/phuctd99/scss-to-css/tree/master/resources
 - Liên kết bài làm online: https://phuctd99.github.io/scss-to-css/public/index.html
       
 
